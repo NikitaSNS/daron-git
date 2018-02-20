@@ -1,2 +1,2 @@
 <? 
-echo phpversion();
+echo phpinfo();

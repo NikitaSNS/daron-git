@@ -1,4 +1,4 @@
 FROM node
 
-RUN mkdir -p /var/www/project
-WORKDIR /var/www/project
+RUN mkdir -p /usr/share/nginx/html/project
+WORKDIR /usr/share/nginx/html/project
