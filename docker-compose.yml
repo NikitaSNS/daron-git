@@ -26,19 +26,9 @@ services:
       - MYSQL_USER=qqq
       - MYSQL_PASSWORD=qqq
   node:
-    # image: "node:8"
-    # user: "node"
-    # working_dir: /var/www/project
-    # environment:
-    #   - NODE_ENV=development
-    # volumes:
-    #   - ./:/var/www/project
-    # expose:
-    #   - "8081"
     build:
       context: ./node
       dockerfile: Dockerfile
     container_name: node
     volumes:
       - ./:/usr/share/nginx/html/project
-    # command: "npm start"
